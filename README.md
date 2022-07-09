@@ -19,13 +19,13 @@ Numbers: [2, 12, 21, 34, 52]
 Bonus: [2, 7]
 ```
 
-Recent numbers, lets you provide a list of numbers that have recently won (this doesn't improve your chances at all but
+From pool, lets you provide a list of numbers that have recently won (this doesn't improve your chances at all but
 what the hey 😅):
 
 ```shell
-$ cargo run --bin recent-numbers -- --numbers 1,2,3,4,5,6,7,8,9,10 --lucky 1,2,3
+$ cargo run --bin from-pool -- --numbers 1,2,3,4,5,6,7,8,9,10 --lucky 1,2,3
     Finished dev [unoptimized + debuginfo] target(s) in 0.48s
-     Running `target/debug/recent-numbers --numbers 1,2,3,4,5,6,7,8,9,10 --lucky 1,2,3`
+     Running `target/debug/from-pool --numbers 1,2,3,4,5,6,7,8,9,10 --lucky 1,2,3`
 Numbers: [3, 6, 7, 8, 10]
 Bonus: [1, 2]
 ```
