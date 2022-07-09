@@ -16,7 +16,9 @@ struct Opt {
 
 fn main() -> Result<(), ParseIntError> {
     let opt = Opt::from_args();
-    println!("Numbers: {:?}", choose_numbers(str_to_vec(&opt.numbers)?));
-    println!("Bonus: {:?}", choose_lucky_stars(str_to_vec(&opt.lucky)?));
+    let numbers = str_to_vec(&opt.numbers)?;
+    let lucky = str_to_vec(&opt.lucky)?;
+    println!("Numbers: {:?}", choose_numbers(numbers));
+    println!("Bonus: {:?}", choose_lucky_stars(lucky));
     Ok(())
 }
