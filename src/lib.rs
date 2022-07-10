@@ -1,3 +1,5 @@
+pub mod online;
+
 use rand::thread_rng;
 use rand::seq::SliceRandom;
 
